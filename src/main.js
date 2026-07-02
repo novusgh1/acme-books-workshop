@@ -26,5 +26,11 @@ registerPlugins(app)
 
 app.mount('#app')
 
+pendo.initialize({
+  visitor: {
+    id: ''
+  }
+});
+
 const bookStore = useBookStore();
 bookStore.loadBooks();
